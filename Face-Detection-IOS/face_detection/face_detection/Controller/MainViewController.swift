@@ -35,12 +35,38 @@ class MainViewController: UIViewController {
         button1.addTarget(self, action: #selector(MainViewController.openAddFaceViewController), for: .touchUpInside)
         self.view.addSubview(button1)
         
-        let button2 = UIButton(frame: CGRect(x: 120, y: 600, width: 135, height: 135))
-        button2.layer.cornerRadius = button1.frame.width / 2
+        let button2 = UIButton(frame: CGRect(x: 80, y: 630, width: 100, height: 100))
+        button2.layer.cornerRadius = button2.frame.width / 2
         button2.setTitle("登陆", for: UIControlState())
         button2.backgroundColor = UIColor.brown
         button2.addTarget(self, action: #selector(MainViewController.openFirstViewController), for: .touchUpInside)
         self.view.addSubview(button2)
+        
+        let button3 = UIButton(frame: CGRect(x: 180, y: 630, width: 100, height: 100))
+        button3.layer.cornerRadius = button3.frame.width / 2
+        button3.setTitle("AR", for: UIControlState())
+        button3.backgroundColor = UIColor.brown
+        button3.addTarget(self, action: #selector(MainViewController.openARViewController), for: .touchUpInside)
+        self.view.addSubview(button3)
+        
+        let button4 = UIButton(frame: CGRect(x: 280, y: 630, width: 100, height: 100))
+        button4.layer.cornerRadius = button4.frame.width / 2
+        button4.setTitle("AR Face", for: UIControlState())
+        button4.backgroundColor = UIColor.brown
+        button4.addTarget(self, action: #selector(MainViewController.openARFaceViewController), for: .touchUpInside)
+        self.view.addSubview(button4)
+    }
+    
+    @objc func openARFaceViewController()
+    {
+        let newViewController = ARFaceViewController()
+        self.present(newViewController, animated: false, completion: nil)
+    }
+    
+    @objc func openARViewController()
+    {
+        let newViewController = ARViewController()
+        self.present(newViewController, animated: false, completion: nil)
     }
     
     @objc func openViewController()

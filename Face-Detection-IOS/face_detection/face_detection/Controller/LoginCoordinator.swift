@@ -20,6 +20,8 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
     
     override func finish(animated: Bool = true) {
         super.finish(animated: animated)
+        //let newViewController = ViewController()
+        self.rootViewController?.dismiss(animated: false, completion: nil)
     }
     
     // MARK: - Setup

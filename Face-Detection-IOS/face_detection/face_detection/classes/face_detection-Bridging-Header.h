@@ -5,3 +5,4 @@
 
 #import "OpencvWrapper.h"
 #import "FCSearchViewController.h"
+#import "MobileNet.h"

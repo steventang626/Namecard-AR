@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		63F2C2AE204B807A00F9CEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2C2AD204B807A00F9CEDF /* AppDelegate.swift */; };
 		63F2C2B0204B807A00F9CEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2C2AF204B807A00F9CEDF /* ViewController.swift */; };
-		63F2C2B3204B807A00F9CEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2B1204B807A00F9CEDF /* Main.storyboard */; };
 		63F2C2B5204B807A00F9CEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2B4204B807A00F9CEDF /* Assets.xcassets */; };
 		63F2C2B8204B807A00F9CEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2B6204B807A00F9CEDF /* LaunchScreen.storyboard */; };
 		63F2C2C4204B809500F9CEDF /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63F2C2C2204B809400F9CEDF /* haarcascade_frontalface_default.xml */; };
@@ -21,6 +20,11 @@
 		63F2C2D2204B80CE00F9CEDF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2C2CD204B80CE00F9CEDF /* Accelerate.framework */; };
 		63F2C2D6204B80EA00F9CEDF /* OpencvWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63F2C2D5204B80EA00F9CEDF /* OpencvWrapper.mm */; };
 		63F2C2D9204BA00900F9CEDF /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2C2D8204BA00900F9CEDF /* FrameExtractor.swift */; };
+		B01E6ED720C6D5FD003102EE /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E6ED620C6D5FD003102EE /* ARViewController.swift */; };
+		B01E6EE620C6DBCF003102EE /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B01E6EE520C6DBCF003102EE /* MobileNet.mlmodel */; };
+		B01E6EF420C6E1F4003102EE /* ARMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01E6EF320C6E1F3003102EE /* ARMain.storyboard */; };
+		B01E6EF820C6FAB5003102EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01E6EF720C6FAB5003102EE /* Main.storyboard */; };
+		B01E6EFC20C70044003102EE /* ARFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E6EFB20C70044003102EE /* ARFaceViewController.swift */; };
 		B02A0C30208FABF6003A9838 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02A0C2F208FABF6003A9838 /* LoginCoordinator.swift */; };
 		B02A0C34208FACB5003A9838 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02A0C33208FACB5003A9838 /* FirstViewController.swift */; };
 		B04B0890207B791600A19863 /* FCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04B088E207B791600A19863 /* FCSearchViewController.m */; };
@@ -73,7 +77,6 @@
 		63F2C2AA204B807A00F9CEDF /* face_detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = face_detection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F2C2AD204B807A00F9CEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F2C2AF204B807A00F9CEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63F2C2B2204B807A00F9CEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63F2C2B4204B807A00F9CEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63F2C2B7204B807A00F9CEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F2C2B9204B807A00F9CEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +94,11 @@
 		63F2C2D8204BA00900F9CEDF /* FrameExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		696096EF6D42B95253477A9C /* Pods-face_detection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-face_detection.release.xcconfig"; path = "Pods/Target Support Files/Pods-face_detection/Pods-face_detection.release.xcconfig"; sourceTree = "<group>"; };
 		757B2F183E4F04C198D14412 /* Pods_face_detection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_face_detection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01E6ED620C6D5FD003102EE /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		B01E6EE520C6DBCF003102EE /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = SOURCE_ROOT; };
+		B01E6EF320C6E1F3003102EE /* ARMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ARMain.storyboard; sourceTree = "<group>"; };
+		B01E6EF720C6FAB5003102EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B01E6EFB20C70044003102EE /* ARFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFaceViewController.swift; sourceTree = "<group>"; };
 		B02A0C2F208FABF6003A9838 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		B02A0C33208FACB5003A9838 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B04B088D207B791600A19863 /* FCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSearchViewController.h; sourceTree = "<group>"; };
@@ -240,9 +248,10 @@
 				63F2C2BF204B807F00F9CEDF /* res */,
 				63F2C2C1204B808700F9CEDF /* classes */,
 				63F2C2AD204B807A00F9CEDF /* AppDelegate.swift */,
-				63F2C2B1204B807A00F9CEDF /* Main.storyboard */,
 				63F2C2B4204B807A00F9CEDF /* Assets.xcassets */,
 				63F2C2B6204B807A00F9CEDF /* LaunchScreen.storyboard */,
+				B01E6EF720C6FAB5003102EE /* Main.storyboard */,
+				B01E6EF320C6E1F3003102EE /* ARMain.storyboard */,
 				63F2C2B9204B807A00F9CEDF /* Info.plist */,
 			);
 			path = face_detection;
@@ -294,6 +303,9 @@
 				B04B08C2207B7E4A00A19863 /* AddFaceViewController.swift */,
 				B02A0C2F208FABF6003A9838 /* LoginCoordinator.swift */,
 				B02A0C33208FACB5003A9838 /* FirstViewController.swift */,
+				B01E6EFB20C70044003102EE /* ARFaceViewController.swift */,
+				B01E6ED620C6D5FD003102EE /* ARViewController.swift */,
+				B01E6EE520C6DBCF003102EE /* MobileNet.mlmodel */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -486,12 +498,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01E6EF820C6FAB5003102EE /* Main.storyboard in Resources */,
 				63F2C2B8204B807A00F9CEDF /* LaunchScreen.storyboard in Resources */,
+				B01E6EF420C6E1F4003102EE /* ARMain.storyboard in Resources */,
 				63F2C2B5204B807A00F9CEDF /* Assets.xcassets in Resources */,
 				63F2C2C4204B809500F9CEDF /* haarcascade_frontalface_default.xml in Resources */,
 				B04B0891207B791600A19863 /* FCSearchViewController.xib in Resources */,
 				63F2C2C5204B809500F9CEDF /* haarcascade_eye.xml in Resources */,
-				63F2C2B3204B807A00F9CEDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +565,7 @@
 				B08F73F920755C55008A84A0 /* UIButton+AFNetworking.m in Sources */,
 				B08F73CA20755C4F008A84A0 /* FCPPFaceDetect.m in Sources */,
 				B08F73CC20755C4F008A84A0 /* FCPPOCR.m in Sources */,
+				B01E6ED720C6D5FD003102EE /* ARViewController.swift in Sources */,
 				63F2C2D6204B80EA00F9CEDF /* OpencvWrapper.mm in Sources */,
 				B04B0890207B791600A19863 /* FCSearchViewController.m in Sources */,
 				B08F73FE20755C55008A84A0 /* AFURLResponseSerialization.m in Sources */,
@@ -559,6 +573,7 @@
 				B08F73CE20755C4F008A84A0 /* FCPPApi.m in Sources */,
 				B04B08B7207B7A4600A19863 /* SDWebImagePrefetcher.m in Sources */,
 				B04B08C0207B7A4600A19863 /* NSData+ImageContentType.m in Sources */,
+				B01E6EE620C6DBCF003102EE /* MobileNet.mlmodel in Sources */,
 				B04B0895207B79C800A19863 /* MBProgressHUD.m in Sources */,
 				B08F73D020755C4F008A84A0 /* FCPPBody.m in Sources */,
 				B02A0C34208FACB5003A9838 /* FirstViewController.swift in Sources */,
@@ -581,6 +596,7 @@
 				63F2C2D9204BA00900F9CEDF /* FrameExtractor.swift in Sources */,
 				B08F73F620755C55008A84A0 /* UIRefreshControl+AFNetworking.m in Sources */,
 				B08F73FD20755C55008A84A0 /* AFImageDownloader.m in Sources */,
+				B01E6EFC20C70044003102EE /* ARFaceViewController.swift in Sources */,
 				B04B08BD207B7A4600A19863 /* SDWebImageDownloaderOperation.m in Sources */,
 				B08F740220755C55008A84A0 /* AFNetworkReachabilityManager.m in Sources */,
 				B08F73FF20755C55008A84A0 /* AFHTTPSessionManager.m in Sources */,
@@ -602,14 +618,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63F2C2B1204B807A00F9CEDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63F2C2B2204B807A00F9CEDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63F2C2B6204B807A00F9CEDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
