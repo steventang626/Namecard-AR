@@ -39,11 +39,18 @@ class ARFaceViewController: UIViewController, ARSCNViewDelegate {
         button.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         self.view.addSubview(button)
         
-        if sceneView != nil {
-            print("Contains a value!")
-        } else {
-            print("Doesn’t contain a value.")
-        }
+        let button1 = UIButton(frame: CGRect(x: 125, y: 700, width: 125, height: 40))
+        button1.setTitle("Back", for: UIControlState())
+        button1.layer.cornerRadius = 10
+        button1.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        button1.addTarget(self, action: #selector(ViewController.dismissSelf), for: .touchUpInside)
+        self.view.addSubview(button1)
+        
+//        if sceneView != nil {
+//            print("Contains a value!")
+//        } else {
+//            print("Doesn’t contain a value.")
+//        }
         
         // Set the view's delegate
         
@@ -84,6 +91,11 @@ class ARFaceViewController: UIViewController, ARSCNViewDelegate {
         
         // Begin Loop to Update CoreML
         loopCoreMLUpdate()
+    }
+    
+    @objc func dismissSelf()
+    {
+        self.dismiss(animated: false, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
