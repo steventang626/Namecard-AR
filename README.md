@@ -1,2 +1,2 @@
-# Deep-Learning-in-AR
+# Namecard AR
 Fighting for graduation!
